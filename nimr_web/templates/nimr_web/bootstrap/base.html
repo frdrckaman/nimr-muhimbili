@@ -400,370 +400,483 @@
             </nav>
         </div>
         <!-- End Mobile Menu -->
-
-        <!-- banner-section -->
-        <section class="banner-section style-one">
-            <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
-                <div class="slide-item">
-                    <div class="image-layer" style="background-image:url({% static 'assets/images/banner/banner-1.jpg' %})"></div>
-                    <div class="auto-container">
-                        <div class="content-box">
-                            <h6><i class="flaticon-star"></i>Scientists at the CTRL</h6>
-                            <h1>Primary Isolation of Mycobacterium Tuberculosisis</h1>
-                            <p>Laboratory Scientists at the CTRL performing culture reading for sputum specimen inoculated in the egg-based culture technique</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide-item">
-                    <div class="image-layer" style="background-image:url({% static 'assets/images/banner/banner-2.jpg' %})"></div>
-                    <div class="auto-container">
-                        <div class="content-box">
-                            <h6><i class="flaticon-star"></i>META TRIAL</h6>
-                            <h1>META TRIAL TEAM TRAINING ON EDC</h1>
-                            <p>Meta Trial team at Amana Regional Hospital, receive training on how to use Electronic Data Capture system(EDC) from LSTM Senior Database Developer</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide-item">
-                    <div class="image-layer" style="background-image:url({% static 'assets/images/banner/banner-3.jpg' %})"></div>
-                    <div class="auto-container">
-                        <div class="content-box">
-                            <h6><i class="flaticon-star"></i>Mwananyamala Site</h6>
-                            <h1>Mwananyamala Site Clinical trial teams</h1>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- banner-section end -->
-
-        <!-- activities-section -->
-        <section class="activities-section centred bg-color-1">
-            <div class="auto-container">
-                <div class="inner-container">
-                    <div class="row clearfix">
-                        <div class="col-lg-3 col-md-6 col-sm-12 single-column">
-                            <div class="single-item">
-                                <div class="icon-box"><i class="flaticon-hospital"></i></div>
-                                <h4>Clinical Research</h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 single-column">
-                            <div class="single-item">
-                                <div class="icon-box"><i class="flaticon-hospital"></i></div>
-                                <h4>Laboratory Research</h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 single-column">
-                            <div class="single-item">
-                                <div class="icon-box"><i class="flaticon-hospital"></i></div>
-                                <h4>NCDs and Co-Infections</h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 single-column">
-                            <div class="single-item">
-                                <div class="icon-box"><i class="flaticon-hospital"></i></div>
-                                <h4>Health Systems Research</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- activities-section end -->
-
-        <!-- about-section -->
-        <section class="about-section sec-pad bg-color-1">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                        <div class="content_block_1">
+        {% block content %}
+            <!-- banner-section -->
+            <section class="banner-section style-one">
+                <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
+                    <div class="slide-item">
+                        <div class="image-layer" style="background-image:url({% static 'assets/images/banner/banner-1.jpg' %})"></div>
+                        <div class="auto-container">
                             <div class="content-box">
-                                <div class="sec-title">
-                                    <h6><i class="flaticon-star"></i><span>Muhimbili Medical Research Centre</span></h6>
-                                    <h2>About NIMR Muhimbili</h2>
-                                    <div class="title-shape"></div>
-                                </div>
-                                <div class="text">
-                                    <p>
-                                        The National Institute for Medical Research (NIMR) is a government
-                                        parastatal institution established by the Act of Parliament in (NIMR Act Cap 59 R.E.2002). It is the
-                                        only public health research institute in the country. The institute has 8 centers across Tanzania;
-                                        NIMR Muhimbili (NIMR- Muhimbili) is one of the centers.
-                                    </p>
-                                    <p>&nbsp;</p>
-                                    <p>
-                                        NIMR-Muhimbili have been
-                                        collaborating with all disease control programs of the Ministry of Health such as Reproductive
-                                        and Child Health (RCH) section, HIV/AIDS Control Programme (NACP), National Tuberculosis
-                                        control programs etc in conducting implementation, operational and clinical research in Tanzania.
-                                        The institute has a functional ethics committee, which is crucial for reviewing and monitoring of
-                                        all health research in the country.
-                                    </p>
-                                    <p>&nbsp;</p>
-                                    <h5>The NIMR Muhimbili Centre has a well-trained workforce with
-                                        extensive experience in conducting multi-site projects, some of which are multcountry, using both
-                                        quantitative and qualitative research data collection methods...<a href="#"><strong>Click here to Read More</strong></a> </h5>
-                                </div>
+                                <h6><i class="flaticon-star"></i>Scientists at the CTRL</h6>
+                                <h1>Primary Isolation of Mycobacterium Tuberculosisis</h1>
+                                <p>Laboratory Scientists at the CTRL performing culture reading for sputum specimen inoculated in the egg-based culture technique</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                        <div class="image_block_1">
-                            <div class="image-box">
-                                <figure class="image"><img src="{% static 'assets/images/resource/manager.jpg' %}" alt=""></figure>
-                                <div class="text">
-                                    <h4>Dr. Mary Mayige</h4>
-                                    <h4>NIMR-MUHIMBILI CENTRE MANAGER</h4>
-                                </div>
+                    <div class="slide-item">
+                        <div class="image-layer" style="background-image:url({% static 'assets/images/banner/banner-2.jpg' %})"></div>
+                        <div class="auto-container">
+                            <div class="content-box">
+                                <h6><i class="flaticon-star"></i>META TRIAL</h6>
+                                <h1>META TRIAL TEAM TRAINING ON EDC</h1>
+                                <p>Meta Trial team at Amana Regional Hospital, receive training on how to use Electronic Data Capture system(EDC) from LSTM Senior Database Developer</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <div class="image-layer" style="background-image:url({% static 'assets/images/banner/banner-3.jpg' %})"></div>
+                        <div class="auto-container">
+                            <div class="content-box">
+                                <h6><i class="flaticon-star"></i>Mwananyamala Site</h6>
+                                <h1>Mwananyamala Site Clinical trial teams</h1>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- about-section end -->
+            </section>
+            <!-- banner-section end -->
 
-        <!-- explore-banner -->
-        <div class="explore-banner bg-color-1">
-            <div class="auto-container">
-                <div class="inner-container clearfix">
-                    <div class="single-item">
-                        <div class="title-box">
-                            <h3>Recent Publications</h3>
-                        </div>
-                    </div>
-                    <div class="single-item">
-                        <div class="inner-box">
-                            <figure class="icon-box"><img src="{% static 'assets/images/icons/icon-1.png' %}" alt=""></figure>
-                            <h4>Publications 1</h4>
-                            <p><a href="#">Click For More Details</a></p>
-                        </div>
-                    </div>
-                    <div class="single-item">
-                        <div class="inner-box">
-                            <figure class="icon-box"><img src="{% static 'assets/images/icons/icon-1.png' %}" alt=""></figure>
-                            <h4>Publications 2</h4>
-                            <p><a href="#">Click For More Details</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- explore-banner end -->
-
-        <!-- service-section -->
-        <section class="service-section" style="background-image: url({% static 'assets/images/background/service-bg.jpg' %});">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInLeft animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <h4><a href="#">Research Department</a></h4>
-                                <div class="btn-box"><a href="#">More</a></div>
-                                <div class="icon-box"><i class="flaticon-award"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 title-column">
-                        <div class="sec-title centred">
-                            <div class="sec-title centred">
-                                <h6><i class="flaticon-star"></i><span>Departments</span><i class="flaticon-star"></i></h6>
-                                <h2>Explore Our Departments</h2>
-                                <div class="title-shape"></div>
-                                <a href="#" class="links">All Departments<i class="flaticon-right-arrow"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInRight animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <h4><a href="#">Finance Department</a></h4>
-                                <div class="btn-box"><a href="#">More</a></div>
-                                <div class="icon-box"><i class="flaticon-budget"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <h4><a href="#">Procurement Department</a></h4>
-                                <div class="btn-box"><a href="#">More</a></div>
-                                <div class="icon-box"><i class="flaticon-booking"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <h4><a href="#">Monitoring & Control Department</a></h4>
-                                <div class="btn-box"><a href="#">More</a></div>
-                                <div class="icon-box"><i class="flaticon-analytics"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <h4><a href="#">HRITD Department</a></h4>
-                                <div class="btn-box"><a href="#">More</a></div>
-                                <div class="icon-box"><i class="flaticon-school"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 service-block">
-                        <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <h4><a href="#">Laboratory Department</a></h4>
-                                <div class="btn-box"><a href="#">More</a></div>
-                                <div class="icon-box"><i class="flaticon-hospital"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- service-section end -->
-
-        <!-- schedules-section -->
-        <section class="schedules-section sec-pad bg-color-1">
-            <div class="bg-layer" style="background-image: url({% static 'assets/images/background/schedule-bg.jpg' %});"></div>
-            <div class="auto-container">
-                <div class="title-inner">
-                    <div class="row clearfix">
-                        <div class="col-lg-6 col-md-6 col-sm-12 title-column">
-                            <div class="sec-title light">
-                                <h6><i class="flaticon-star"></i><span>Our Calendars</span></h6>
-                                <h2>News & Announcements</h2>
-                                <div class="title-shape"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="schedule-tab">
-                    <div class="tab-btn-box">
-                        <ul class="tab-btns schedule-tab-btns clearfix">
-                            <li class="p-tab-btn active-btn" data-tab="#tab-1">Upcoming Events</li>
-                            <li class="p-tab-btn" data-tab="#tab-2">Upcoming Metings</li>
-                            <li class="p-tab-btn" data-tab="#tab-3">Community Calendar</li>
-                        </ul>
-                    </div>
-                    <div class="inner-content">
+            <!-- activities-section -->
+            <section class="activities-section centred bg-color-1">
+                <div class="auto-container">
+                    <div class="inner-container">
                         <div class="row clearfix">
-                            <div class="col-lg-4 col-md-12 col-sm-12 form-column">
-                                <div class="subscribe-inner centred">
+                            <div class="col-lg-3 col-md-6 col-sm-12 single-column">
+                                <div class="single-item">
+                                    <div class="icon-box"><i class="flaticon-hospital"></i></div>
+                                    <h4>Clinical Research</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 single-column">
+                                <div class="single-item">
+                                    <div class="icon-box"><i class="flaticon-hospital"></i></div>
+                                    <h4>Laboratory Research</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 single-column">
+                                <div class="single-item">
+                                    <div class="icon-box"><i class="flaticon-hospital"></i></div>
+                                    <h4>NCDs and Co-Infections</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 single-column">
+                                <div class="single-item">
+                                    <div class="icon-box"><i class="flaticon-hospital"></i></div>
+                                    <h4>Health Systems Research</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- activities-section end -->
 
-                                    <div class="lower-box">
-                                        <form action="#" method="post" class="subscribe-form">
-                                            <div class="form-group">
-                                                <input type="email" name="email" placeholder="Enter your email" required="">
-                                            </div>
-                                            <div class="form-group">
-                                                <button type="submit" class="theme-btn">Subscribe Us</button>
-                                            </div>
-                                        </form>
+            <!-- about-section -->
+            <section class="about-section sec-pad bg-color-1">
+                <div class="auto-container">
+                    <div class="row clearfix">
+                        <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                            <div class="content_block_1">
+                                <div class="content-box">
+                                    <div class="sec-title">
+                                        <h6><i class="flaticon-star"></i><span>Muhimbili Medical Research Centre</span></h6>
+                                        <h2>About NIMR Muhimbili</h2>
+                                        <div class="title-shape"></div>
+                                    </div>
+                                    <div class="text">
+                                        <p>
+                                            The National Institute for Medical Research (NIMR) is a government
+                                            parastatal institution established by the Act of Parliament in (NIMR Act Cap 59 R.E.2002). It is the
+                                            only public health research institute in the country. The institute has 8 centers across Tanzania;
+                                            NIMR Muhimbili (NIMR- Muhimbili) is one of the centers.
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <p>
+                                            NIMR-Muhimbili have been
+                                            collaborating with all disease control programs of the Ministry of Health such as Reproductive
+                                            and Child Health (RCH) section, HIV/AIDS Control Programme (NACP), National Tuberculosis
+                                            control programs etc in conducting implementation, operational and clinical research in Tanzania.
+                                            The institute has a functional ethics committee, which is crucial for reviewing and monitoring of
+                                            all health research in the country.
+                                        </p>
+                                        <p>&nbsp;</p>
+                                        <h5>The NIMR Muhimbili Centre has a well-trained workforce with
+                                            extensive experience in conducting multi-site projects, some of which are multcountry, using both
+                                            quantitative and qualitative research data collection methods...<a href="#"><strong>Click here to Read More</strong></a> </h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8 col-md-12 col-sm-12 inner-column">
-                                <div class="p-tabs-content">
-                                    <div class="p-tab active-tab" id="tab-1">
-                                        <div class="two-column-carousel owl-carousel owl-theme owl-dots-none">
-                                            <div class="schedule-block-one">
-                                                <div class="inner-box">
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                            <div class="image_block_1">
+                                <div class="image-box">
+                                    <figure class="image"><img src="{% static 'assets/images/resource/manager.jpg' %}" alt=""></figure>
+                                    <div class="text">
+                                        <h4>Dr. Mary Mayige</h4>
+                                        <h4>NIMR-MUHIMBILI CENTRE MANAGER</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- about-section end -->
 
-                                                    <div class="lower-content">
-                                                        <ul class="post-info clearfix">
-                                                            <li><i class="flaticon-clock-circular-outline"></i>3.00 pm - 4.30 pm</li>
-                                                            <li><i class="flaticon-gps"></i>Heaton Park, Mt Road M25 2SW</li>
-                                                        </ul>
-                                                        <div class="links"><a href="#">Read More<i class="flaticon-right-arrow"></i></a></div>
-                                                        <div class="share-box"><a href="#">Share<i class="fas fa-share-alt"></i></a></div>
+            {% block publication %}
+                <!-- explore-banner -->
+                <div class="explore-banner bg-color-1">
+                    <div class="auto-container">
+                        <div class="inner-container clearfix">
+                            <div class="single-item">
+                                <div class="title-box">
+                                    <h3>Recent Publications</h3>
+                                </div>
+                            </div>
+                            <div class="single-item">
+                                <div class="inner-box">
+                                    <figure class="icon-box"><img src="{% static 'assets/images/icons/icon-1.png' %}" alt=""></figure>
+                                    <h4>Publications 1</h4>
+                                    <p><a href="#">Click For More Details</a></p>
+                                </div>
+                            </div>
+                            <div class="single-item">
+                                <div class="inner-box">
+                                    <figure class="icon-box"><img src="{% static 'assets/images/icons/icon-1.png' %}" alt=""></figure>
+                                    <h4>Publications 2</h4>
+                                    <p><a href="#">Click For More Details</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- explore-banner end -->
+            {% endblock publication %}
+
+            <!-- service-section -->
+            <section class="service-section" style="background-image: url({% static 'assets/images/background/service-bg.jpg' %});">
+                <div class="auto-container">
+                    <div class="row clearfix">
+                        <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                            <div class="service-block-one wow fadeInLeft animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                <div class="inner-box">
+                                    <h4><a href="#">Research Department</a></h4>
+                                    <div class="btn-box"><a href="#">More</a></div>
+                                    <div class="icon-box"><i class="flaticon-award"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 title-column">
+                            <div class="sec-title centred">
+                                <div class="sec-title centred">
+                                    <h6><i class="flaticon-star"></i><span>Departments</span><i class="flaticon-star"></i></h6>
+                                    <h2>Explore Our Departments</h2>
+                                    <div class="title-shape"></div>
+                                    <a href="#" class="links">All Departments<i class="flaticon-right-arrow"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                            <div class="service-block-one wow fadeInRight animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                <div class="inner-box">
+                                    <h4><a href="#">Finance Department</a></h4>
+                                    <div class="btn-box"><a href="#">More</a></div>
+                                    <div class="icon-box"><i class="flaticon-budget"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                            <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                <div class="inner-box">
+                                    <h4><a href="#">Procurement Department</a></h4>
+                                    <div class="btn-box"><a href="#">More</a></div>
+                                    <div class="icon-box"><i class="flaticon-booking"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                            <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                <div class="inner-box">
+                                    <h4><a href="#">Monitoring & Control Department</a></h4>
+                                    <div class="btn-box"><a href="#">More</a></div>
+                                    <div class="icon-box"><i class="flaticon-analytics"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                            <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                                <div class="inner-box">
+                                    <h4><a href="#">HRITD Department</a></h4>
+                                    <div class="btn-box"><a href="#">More</a></div>
+                                    <div class="icon-box"><i class="flaticon-school"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 service-block">
+                            <div class="service-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                <div class="inner-box">
+                                    <h4><a href="#">Laboratory Department</a></h4>
+                                    <div class="btn-box"><a href="#">More</a></div>
+                                    <div class="icon-box"><i class="flaticon-hospital"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- service-section end -->
+
+
+            {% block news %}
+                <!-- schedules-section -->
+                <section class="schedules-section sec-pad bg-color-1">
+                    <div class="bg-layer" style="background-image: url({% static 'assets/images/background/schedule-bg.jpg' %});"></div>
+                    <div class="auto-container">
+                        <div class="title-inner">
+                            <div class="row clearfix">
+                                <div class="col-lg-6 col-md-6 col-sm-12 title-column">
+                                    <div class="sec-title light">
+                                        <h6><i class="flaticon-star"></i><span>Our Calendars</span></h6>
+                                        <h2>News & Announcements</h2>
+                                        <div class="title-shape"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="schedule-tab">
+                            <div class="tab-btn-box">
+                                <ul class="tab-btns schedule-tab-btns clearfix">
+                                    <li class="p-tab-btn active-btn" data-tab="#tab-1">Upcoming Events</li>
+                                    <li class="p-tab-btn" data-tab="#tab-2">Upcoming Metings</li>
+                                    <li class="p-tab-btn" data-tab="#tab-3">Community Calendar</li>
+                                </ul>
+                            </div>
+                            <div class="inner-content">
+                                <div class="row clearfix">
+                                    <div class="col-lg-4 col-md-12 col-sm-12 form-column">
+                                        <div class="subscribe-inner centred">
+
+                                            <div class="lower-box">
+                                                <form action="#" method="post" class="subscribe-form">
+                                                    <div class="form-group">
+                                                        <input type="email" name="email" placeholder="Enter your email" required="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button type="submit" class="theme-btn">Subscribe Us</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-12 col-sm-12 inner-column">
+                                        <div class="p-tabs-content">
+                                            <div class="p-tab active-tab" id="tab-1">
+                                                <div class="two-column-carousel owl-carousel owl-theme owl-dots-none">
+                                                    <div class="schedule-block-one">
+                                                        <div class="inner-box">
+
+                                                            <div class="lower-content">
+                                                                <ul class="post-info clearfix">
+                                                                    <li><i class="flaticon-clock-circular-outline"></i>3.00 pm - 4.30 pm</li>
+                                                                    <li><i class="flaticon-gps"></i>Heaton Park, Mt Road M25 2SW</li>
+                                                                </ul>
+                                                                <div class="links"><a href="#">Read More<i class="flaticon-right-arrow"></i></a></div>
+                                                                <div class="share-box"><a href="#">Share<i class="fas fa-share-alt"></i></a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule-block-one">
+                                                        <div class="inner-box">
+
+                                                            <div class="lower-content">
+                                                                <ul class="post-info clearfix">
+                                                                    <li><i class="flaticon-clock-circular-outline"></i>10.00 am - 6.30 pm</li>
+                                                                    <li><i class="flaticon-gps"></i>182 St Georges Road, San Antonio</li>
+                                                                </ul>
+                                                                <div class="links"><a href="event-details.html">Read More<i class="flaticon-right-arrow"></i></a></div>
+                                                                <div class="share-box"><a href="#">Share<i class="fas fa-share-alt"></i></a></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="schedule-block-one">
-                                                <div class="inner-box">
+                                            <div class="p-tab" id="tab-2">
+                                                <div class="two-column-carousel owl-carousel owl-theme owl-dots-none">
+                                                    <div class="schedule-block-one">
+                                                        <div class="inner-box">
 
-                                                    <div class="lower-content">
-                                                        <ul class="post-info clearfix">
-                                                            <li><i class="flaticon-clock-circular-outline"></i>10.00 am - 6.30 pm</li>
-                                                            <li><i class="flaticon-gps"></i>182 St Georges Road, San Antonio</li>
-                                                        </ul>
-                                                        <div class="links"><a href="event-details.html">Read More<i class="flaticon-right-arrow"></i></a></div>
-                                                        <div class="share-box"><a href="#">Share<i class="fas fa-share-alt"></i></a></div>
+                                                            <div class="lower-content">
+                                                                <ul class="post-info clearfix">
+                                                                    <li><i class="flaticon-clock-circular-outline"></i>3.00 pm - 4.30 pm</li>
+                                                                    <li><i class="flaticon-gps"></i>Heaton Park, Mt Road M25 2SW</li>
+                                                                </ul>
+                                                                <div class="links"><a href="event-details.html">Read More<i class="flaticon-right-arrow"></i></a></div>
+                                                                <div class="share-box"><a href="#">Share<i class="fas fa-share-alt"></i></a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule-block-one">
+                                                        <div class="inner-box">
+
+                                                            <div class="lower-content">
+                                                                <ul class="post-info clearfix">
+                                                                    <li><i class="flaticon-clock-circular-outline"></i>10.00 am - 6.30 pm</li>
+                                                                    <li><i class="flaticon-gps"></i>182 St Georges Road, San Antonio</li>
+                                                                </ul>
+                                                                <div class="links"><a href="event-details.html">Read More<i class="flaticon-right-arrow"></i></a></div>
+                                                                <div class="share-box"><a href="#">Share<i class="fas fa-share-alt"></i></a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="p-tab" id="tab-3">
+                                                <div class="two-column-carousel owl-carousel owl-theme owl-dots-none">
+                                                    <div class="schedule-block-one">
+                                                        <div class="inner-box">
+
+                                                            <div class="lower-content">
+                                                                <ul class="post-info clearfix">
+                                                                    <li><i class="flaticon-clock-circular-outline"></i>3.00 pm - 4.30 pm</li>
+                                                                    <li><i class="flaticon-gps"></i>Heaton Park, Mt Road M25 2SW</li>
+                                                                </ul>
+                                                                <div class="links"><a href="event-details.html">Read More<i class="flaticon-right-arrow"></i></a></div>
+                                                                <div class="share-box"><a href="#">Share<i class="fas fa-share-alt"></i></a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="schedule-block-one">
+                                                        <div class="inner-box">
+
+                                                            <div class="lower-content">
+                                                                <ul class="post-info clearfix">
+                                                                    <li><i class="flaticon-clock-circular-outline"></i>10.00 am - 6.30 pm</li>
+                                                                    <li><i class="flaticon-gps"></i>182 St Georges Road, San Antonio</li>
+                                                                </ul>
+                                                                <div class="links"><a href="event-details.html">Read More<i class="flaticon-right-arrow"></i></a></div>
+                                                                <div class="share-box"><a href="#">Share<i class="fas fa-share-alt"></i></a></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="p-tab" id="tab-2">
-                                        <div class="two-column-carousel owl-carousel owl-theme owl-dots-none">
-                                            <div class="schedule-block-one">
-                                                <div class="inner-box">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- schedules-section end -->
+            {% endblock news %}
 
-                                                    <div class="lower-content">
-                                                        <ul class="post-info clearfix">
-                                                            <li><i class="flaticon-clock-circular-outline"></i>3.00 pm - 4.30 pm</li>
-                                                            <li><i class="flaticon-gps"></i>Heaton Park, Mt Road M25 2SW</li>
-                                                        </ul>
-                                                        <div class="links"><a href="event-details.html">Read More<i class="flaticon-right-arrow"></i></a></div>
-                                                        <div class="share-box"><a href="#">Share<i class="fas fa-share-alt"></i></a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="schedule-block-one">
-                                                <div class="inner-box">
-
-                                                    <div class="lower-content">
-                                                        <ul class="post-info clearfix">
-                                                            <li><i class="flaticon-clock-circular-outline"></i>10.00 am - 6.30 pm</li>
-                                                            <li><i class="flaticon-gps"></i>182 St Georges Road, San Antonio</li>
-                                                        </ul>
-                                                        <div class="links"><a href="event-details.html">Read More<i class="flaticon-right-arrow"></i></a></div>
-                                                        <div class="share-box"><a href="#">Share<i class="fas fa-share-alt"></i></a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
+            <!-- team-section -->
+            <section class="team-section sec-pad bg-color-1">
+                <div class="pattern-layer" style="background-image: url({% static 'assets/images/shape/shape-5.png' %});"></div>
+                <div class="auto-container">
+                    <div class="sec-title">
+                        <h6><i class="flaticon-star"></i><span>Leaders</span></h6>
+                        <h2>Heads of Departments</h2>
+                        <div class="title-shape"></div>
+                        <a href="#" class="theme-btn">All members</a>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-lg-3 col-md-6 col-sm-12 team-block">
+                            <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                <div class="inner-box">
+                                    <figure class="image-box"><a href="#"><img src="{% static 'assets/images/team/amos.jpg' %}" alt=""></a></figure>
+                                    <div class="lower-content">
+                                        <div class="author-box">
+                                            <h4><a href="#">Dr. Amos Kahwa</a></h4>
+                                            <span class="designation">Head of Research</span>
                                         </div>
                                     </div>
-                                    <div class="p-tab" id="tab-3">
-                                        <div class="two-column-carousel owl-carousel owl-theme owl-dots-none">
-                                            <div class="schedule-block-one">
-                                                <div class="inner-box">
-
-                                                    <div class="lower-content">
-                                                        <ul class="post-info clearfix">
-                                                            <li><i class="flaticon-clock-circular-outline"></i>3.00 pm - 4.30 pm</li>
-                                                            <li><i class="flaticon-gps"></i>Heaton Park, Mt Road M25 2SW</li>
-                                                        </ul>
-                                                        <div class="links"><a href="event-details.html">Read More<i class="flaticon-right-arrow"></i></a></div>
-                                                        <div class="share-box"><a href="#">Share<i class="fas fa-share-alt"></i></a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="schedule-block-one">
-                                                <div class="inner-box">
-
-                                                    <div class="lower-content">
-                                                        <ul class="post-info clearfix">
-                                                            <li><i class="flaticon-clock-circular-outline"></i>10.00 am - 6.30 pm</li>
-                                                            <li><i class="flaticon-gps"></i>182 St Georges Road, San Antonio</li>
-                                                        </ul>
-                                                        <div class="links"><a href="event-details.html">Read More<i class="flaticon-right-arrow"></i></a></div>
-                                                        <div class="share-box"><a href="#">Share<i class="fas fa-share-alt"></i></a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 team-block">
+                            <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+                                <div class="inner-box">
+                                    <figure class="image-box"><a href="#"><img src="{% static 'assets/images/team/esther.jpg' %}" alt=""></a></figure>
+                                    <div class="lower-content">
+                                        <div class="author-box">
+                                            <h4><a href="#">Dr. Esther Ngadaya</a></h4>
+                                            <span class="designation">Head Monitoring & Control</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 team-block">
+                            <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                                <div class="inner-box">
+                                    <figure class="image-box"><a href="#"><img src="{% static 'assets/images/team/kilale.jpg' %}" alt=""></a></figure>
+                                    <div class="lower-content">
+                                        <div class="author-box">
+                                            <h4><a href="#">Dr. Andrew Kilale</a></h4>
+                                            <span class="designation">Head HRITD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 team-block">
+                            <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                <div class="inner-box">
+                                    <figure class="image-box"><a href="#"><img src="{% static 'assets/images/team/range.jpg' %}" alt=""></a></figure>
+                                    <div class="lower-content">
+                                        <div class="author-box">
+                                            <h4><a href="#">DR. Nyagosya Range</a></h4>
+                                            <span class="designation">Head Laboratory</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 team-block">
+                            <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                <div class="inner-box">
+                                    <figure class="image-box"><a href="#"><img src="{% static 'assets/images/team/mbuguni.jpg' %}" alt=""></a></figure>
+                                    <div class="lower-content">
+                                        <div class="author-box">
+                                            <h4><a href="#">Patrick Mbuguni</a></h4>
+                                            <span class="designation">Head Finance</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 team-block">
+                            <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                <div class="inner-box">
+                                    <figure class="image-box"><a href="#"><img src="{% static 'assets/images/team/jane.jpg' %}" alt=""></a></figure>
+                                    <div class="lower-content">
+                                        <div class="author-box">
+                                            <h4><a href="#">Jane Tungu</a></h4>
+                                            <span class="designation">Administration</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 team-block">
+                            <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                <div class="inner-box">
+                                    <figure class="image-box"><a href="#"><img src="{% static 'assets/images/team/rose.jpg' %}" alt=""></a></figure>
+                                    <div class="lower-content">
+                                        <div class="author-box">
+                                            <h4><a href="#">Rose Tendeka</a></h4>
+                                            <span class="designation">Head PMU</span>
                                         </div>
                                     </div>
                                 </div>
@@ -771,117 +884,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- schedules-section end -->
-
-        <!-- team-section -->
-        <section class="team-section sec-pad bg-color-1">
-            <div class="pattern-layer" style="background-image: url({% static 'assets/images/shape/shape-5.png' %});"></div>
-            <div class="auto-container">
-                <div class="sec-title">
-                    <h6><i class="flaticon-star"></i><span>Leaders</span></h6>
-                    <h2>Heads of Departments</h2>
-                    <div class="title-shape"></div>
-                    <a href="#" class="theme-btn">All members</a>
-                </div>
-                <div class="row clearfix">
-                    <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-                        <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="image-box"><a href="#"><img src="{% static 'assets/images/team/amos.jpg' %}" alt=""></a></figure>
-                                <div class="lower-content">
-                                    <div class="author-box">
-                                        <h4><a href="#">Dr. Amos Kahwa</a></h4>
-                                        <span class="designation">Head of Research</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-                        <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="image-box"><a href="#"><img src="{% static 'assets/images/team/esther.jpg' %}" alt=""></a></figure>
-                                <div class="lower-content">
-                                    <div class="author-box">
-                                        <h4><a href="#">Dr. Esther Ngadaya</a></h4>
-                                        <span class="designation">Head Monitoring & Control</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-                        <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="image-box"><a href="#"><img src="{% static 'assets/images/team/kilale.jpg' %}" alt=""></a></figure>
-                                <div class="lower-content">
-                                    <div class="author-box">
-                                        <h4><a href="#">Dr. Andrew Kilale</a></h4>
-                                        <span class="designation">Head HRITD</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-                        <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="image-box"><a href="#"><img src="{% static 'assets/images/team/range.jpg' %}" alt=""></a></figure>
-                                <div class="lower-content">
-                                    <div class="author-box">
-                                        <h4><a href="#">DR. Nyagosya Range</a></h4>
-                                        <span class="designation">Head Laboratory</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-                        <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="image-box"><a href="#"><img src="{% static 'assets/images/team/mbuguni.jpg' %}" alt=""></a></figure>
-                                <div class="lower-content">
-                                    <div class="author-box">
-                                        <h4><a href="#">Patrick Mbuguni</a></h4>
-                                        <span class="designation">Head Finance</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-                        <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="image-box"><a href="#"><img src="{% static 'assets/images/team/jane.jpg' %}" alt=""></a></figure>
-                                <div class="lower-content">
-                                    <div class="author-box">
-                                        <h4><a href="#">Jane Tungu</a></h4>
-                                        <span class="designation">Administration</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 team-block">
-                        <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-                            <div class="inner-box">
-                                <figure class="image-box"><a href="#"><img src="{% static 'assets/images/team/rose.jpg' %}" alt=""></a></figure>
-                                <div class="lower-content">
-                                    <div class="author-box">
-                                        <h4><a href="#">Rose Tendeka</a></h4>
-                                        <span class="designation">Head PMU</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- team-section end -->
-
+            </section>
+            <!-- team-section end -->
+        {% endblock content %}
         <!-- main-footer -->
         <footer class="main-footer">
             <div class="widget-section">
