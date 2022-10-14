@@ -1,6 +1,6 @@
-from django.apps import AppConfig
+from django.apps import AppConfig as DjangoAppConfig
 
 
-class NimrWebConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
+class AppConfig(DjangoAppConfig):
     name = 'nimr_web'
+    verbose_name = "NIMR Website"
