@@ -2,7 +2,7 @@ from django.contrib import admin
 from django_audit_fields import audit_fieldset_tuple
 from simple_history.admin import SimpleHistoryAdmin as BaseSimpleHistoryAdmin
 
-from .models import StaffProfile
+from ..models import StaffProfile
 
 admin.site.enable_nav_sidebar = False
 
