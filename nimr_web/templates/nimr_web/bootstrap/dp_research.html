@@ -1,10 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'nimr_web/bootstrap/base.html' %}
+{% block content %}
+        <!-- banner-section -->
+    <section class="page-title" style="background-image: url(assets/images/background/page-title.jpg);">
+        <div class="auto-container">
+            <div class="content-box">
+                <div class="title centred">
+                    <h1>Research Department</h1>
+                </div>
+                <ul class="bread-crumb clearfix">
+                    <li><a href="{% url 'nimr_web:home' %}">Home</a></li>
+                    <li>Research</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- banner-section end -->
 
-</body>
-</html>
+    <!-- faq-section -->
+    <section class="faq-section sec-pad">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+                    <div class="content_block_8">
+                        <div class="content-box">
+                            <div class="sec-title">
+                                <h6><i class="flaticon-star"></i><span>Research</span></h6>
+                                <h2>Research Department</h2>
+                                <div class="title-shape"></div>
+                            </div>
+                            <div class="text">
+                                <p>
+                                    The research department has evolved from a disease specific approach research i.e., carrying out research on TB, HIV/AIDS and the related illnesses to the wider mandate that includes all health research at the local, regional, zonal and national levels in line with the NIMR’s mandate. The current research focus is on major research areas which include Tuberculosis and TB/HIV co-infection; Zoonotic diseases; Clinical trials; Diagnosis and laboratory sciences; Disease Surveillance; Genetics and Molecular Biology; Bioinformatics; Health System and Policy Research; and Child and Maternal health. Over the years, the research carried out by the Centre, ranged from basic sciences, and epidemiology to clinical trials. It is worth to note that research carried by the Centre falls within the National Health Research Priorities.
+                                    The research department has five research programs
+                                </p>
+                            </div>
+                            <ul class="accordion-box">
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>(i) </span> Clinical and epidemiological research on tuberculosis and HIV infections </h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>(ii) </span> Reproductive, Maternal and child health. </h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>(iii) </span> Non communicable Diseases (NCDs) and co-infections </h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>(iv) </span> Laboratory research on TB and HIV infection. </h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>(v) </span> Health systems research and policy </h5>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="text">
+                                <p>Being located inside the Muhimbili University of Health and Allied Sciences (MUHAS) and Muhimbili National hospital, NIMR-Muhimbili centre has a pool of qualified research assistants with different disciplines including medical doctors, social scientist, psychologists among the few. NIMR-Muhimbili has been conducting about 40-45 projects annually at different level of magnitude and disciplines. Currently, NIMR-Muhimbili, has active funding from the EDCTP, World Bank, UNICEF, USAID (through Engender Health organization), and the National Institute of Health among others. </p>
+                                <p>Some of the findings from these studies have contributed to national and global policies in the management, prevention, and control of diseases. The centre has over 200 published papers in peer review journals, some with very high impact factors, such as the Lancet and the New England journal of medicine, is also leading the development, and now leading running of multi-centre HIV and TB trial web database, the management system, (the REDAMS database) in East Africa. The centre has also won and successful implemented several consultancies with national and international agencies including NIH, USAID and PEPFAR programs, and we have a quality web-based data base for large scale multisite and multi-country clinical and population-based studies.  </p>
+                                <p><strong>Haydom Research Station:</strong> The Station is located within Haydom Lutheran Hospital in Mbulu District, Manyara Region of northern Tanzania. Haydom Lutheran hospital (HLH) is located 80 km from Mbulu town in Mbulu district. The Station is a result of collaborative initiatives between the hospital and National Institute for Medical Research. The National Institute for Medical Research has been carrying out collaborative research with the Haydom Lutheran Hospital since 1999. Since, then the number of research activities at the Hospital has increased tremendously, hence the need for a solid base for research activities was sought. In 2005 a Memorandum of Understanding was developed and signed stipulating modalities undertaking collaborative research between the National Institute for Medical Research, Haydom Lutheran Hospital and University of Bergen, Norway.</p>
+                                <p><strong>Kilosa Research Station:</strong> The Station originates from the Rectal Artesunate Clinical (RECTOCAP) Trial which was carried out in Kilosa District from 1999. The Station is within the Kilosa District Hospital, located in at about 100 km from Morogoro in central Tanzania. The Station utilizes hospital buildings renovated using funds obtained from the Swedish Embassy in Tanzania. In 2000, permission was granted by the district health authorities to re-construct three permanent offices to constitute a research base for a clinical trial. In 2006, the Kilosa clinical trial offices were formally absorbed into the structure of the National Institute for Medical Research (NIMR) of Tanzania as the Kilosa Station under NIMR’s Muhimbili Centre. </p>
+                                <p><strong>CLINICAL TRIAL FACILITIES:</strong> NIMR Muhimbili Research Centre has three clinical trials units located in Mwananyamala, Temeke, and Amana Regional Referral Hospitals in Dar es Salaam, Tanzania. The clinical units have all the key facilities to support clinical trials. The sites are involved in several clinical trials which are ongoing at the centre. </p>
+                                <p><strong>OUR PARTNERS:</strong> To name a few; Nelson Mandela African Institution of Science and Technology, Centre Suisse de Recherches Scientifiques en Côte d’Ivoire, University of Bergen, Edwardo Mondlane University, University of Zambia School of Veterinary Medicine, Sokoine University of Agriculture, Technical University of Munich Germany, Ministry of Health, Community Development, Gender, Elderly and Children, National Tuberculosis and Leprosy Control Program, Kibong’oto Infectious Diseases Hospital, World Health Organization, Global Fund, Kilimanjaro Clinical Research Institute, Kenya Medical Research Institute Kisumu, Infectious Diseases Institute, Addis Ababa University, Institute of Endemic Diseases, University of Khartoum Sudan, Liverpool School of Tropical Medicine, MRC/UVRI-Uganda, Makerere University, Fondation Congolaise pour la Recherche Médicale, University College London, National Institute for Infectious Diseases Lazzaro Spallanzani, Royal Institute of International Affairs, Njala University, Royal Veterinary College University of London</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- activities-section end -->
+{% endblock %}

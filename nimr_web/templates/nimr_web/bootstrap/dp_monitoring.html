@@ -1,10 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'nimr_web/bootstrap/base.html' %}
+{% block content %}
+    <!-- banner-section -->
+    <section class="page-title" style="background-image: url(assets/images/background/page-title.jpg);">
+        <div class="auto-container">
+            <div class="content-box">
+                <div class="title centred">
+                    <h1>LABORATORY</h1>
+                </div>
+                <ul class="bread-crumb clearfix">
+                    <li><a href="{% url 'nimr_web:home' %}">Home</a></li>
+                    <li>Laboratory Department</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- banner-section end -->
 
-</body>
-</html>
+    <!-- faq-section -->
+    <section class="faq-section sec-pad">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+                    <div class="content_block_8">
+                        <div class="content-box">
+                            <div class="sec-title">
+                                <h6><i class="flaticon-star"></i><span>Laboratory</span></h6>
+                                <h2>THE CENTRAL TUBERCULOSIS REFERENCE LABORATORY</h2>
+                                <div class="title-shape"></div>
+                            </div>
+                            <div class="text">
+                                <p>
+                                    The Central Tuberculosis Reference Laboratory (CTRL) in Tanzania, is a laboratory that provide various services related to the diagnosis of tuberculosis (TB). The laboratory is located at the third floor of the Central Pathology Laboratory (CPL) building within Muhimbili National Hospital (MNH). The CTRL is jointly operated by the National Tuberculosis and Leprosy Control Program (NTLP) and the National Institute for Medical Research - Muhimbili Medical Research Center (NIMR - MMRC). The CTRL is accredited on Acid Fast Bacilli (AFB) smear microscopy and GeneXpert (Xpert MTB/RIF) under International Organization for Standardization (ISO) 15189 of 2012 since 2018 and has managed to maintain the accreditation for four years ever since.
+                                </p>
+                                <p>
+                                    The CTRL has a total of 26 employees; of whom 16 are men and 10 are women. Of the 26 employees, eight (8) are employed though NIMR and 18 through the NTLP. As per carder and qualifications; 16 are technical staff, 8 data personnel and 2 are Laboratory Attendants. Of the 16 technical staff; 1 is a holder of Doctor of Philosophy (PhD), 7 Bachelor of Science and 8 Diploma in Medical Laboratory Sciences.
+                                </p>
+                                <p>
+                                    The main functions of the CTRL includes:
+                                </p>
+                            </div>
+                            <ul class="accordion-box">
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>01. </span> Diagnosis of susceptible and drug resistance tuberculosis </h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>02. </span> Provide technical advice in the purchase of medical equipment and reagents used in the investigation of tuberculosis </h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>03. </span> Monitor the resistance of anti-TB drugs through Surveillances such as Drug Resistance Survey (DRS) or Prevalence Survey of Tuberculosis (PST) </h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>04. </span> Monitor the quality of tuberculosis screening services through Implementation of the External Quality Assurance System (EQA)</h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>05. </span> Conduct training for laboratories that provide tuberculosis testing services in the country</h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>06. </span> Provide practical training services (Field work attachment) for Undergraduates, Postgraduates and diploma students in this country.</h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>07. </span> Participate in various researches relevant to tuberculosis and other diseases of public health importance</h5>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- activities-section end -->
+{% endblock %}

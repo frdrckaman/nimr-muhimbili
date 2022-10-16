@@ -1,10 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'nimr_web/bootstrap/base.html' %}
+{% block content %}
+    <!-- banner-section -->
+    <section class="page-title" style="background-image: url(assets/images/background/page-title.jpg);">
+        <div class="auto-container">
+            <div class="content-box">
+                <div class="title centred">
+                    <h1>PMU</h1>
+                </div>
+                <ul class="bread-crumb clearfix">
+                    <li><a href="{% url 'nimr_web:home' %}">Home</a></li>
+                    <li>PMU Department</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- banner-section end -->
 
-</body>
-</html>
+    <!-- faq-section -->
+    <section class="faq-section sec-pad">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+                    <div class="content_block_8">
+                        <div class="content-box">
+                            <div class="sec-title">
+                                <h6><i class="flaticon-star"></i><span>PMU</span></h6>
+                                <h2>PROCUREMENT MANAGEMENT UNIT</h2>
+                                <div class="title-shape"></div>
+                            </div>
+                            <div class="text">
+                                <p>
+                                    The main functions of procurement management unit includes:
+                                </p>
+                            </div>
+                            <ul class="accordion-box">
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>01. </span> Manage all procurement and disposal by tender activities of the procuring entity except adjudication and the award of contract. </h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>02. </span> Support the functioning of the tender board  </h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>03. </span> Implement the decisions of the tender board </h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>04. </span> Act as the secretariat to the tender board</h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>05. </span> Plan the Procurement and disposal by tender activities of the procuring entity </h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>06. </span> Recommend Procurement and disposal by tender procedures</h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>07. </span> Check and prepare statements of requirements</h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>08. </span> Prepare tendering documents</h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>09. </span> Prepare advertisements of tender opportunities </h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>10. </span> Prepare contract documents</h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>11. </span> Issue approved contract documents </h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>12. </span> Maintain and archive records of the Procurement and disposal process</h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>13. </span> Maintain a list or register of all contracts awarded </h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>14. </span> Prepare monthly reports for the tender board</h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>15. </span> Prepare and submit to the management meeting quarterly reports on the implementation of the annual Procurement plan</h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>16. </span> Co-ordinate the Procurement and disposal activities of all the departments of the procuring entity</h5>
+                                    </div>
+                                </li>
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="icon-outer"></div>
+                                        <h5><span>17. </span> Prepare other report as many be required from time to time.    </h5>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- activities-section end -->
+{% endblock %}
