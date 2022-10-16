@@ -1,10 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'nimr_web/bootstrap/base.html' %}
+{% block content %}
+    <!-- banner-section -->
+    <section class="page-title" style="background-image: url();">
+        <div class="auto-container">
+            <div class="content-box">
+                <div class="title centred">
+                    <h1>ABOUT NIMR-MUHIMBILI</h1>
+                </div>
+                <ul class="bread-crumb clearfix">
+                    <li><a href="{% url 'nimr_web:home' %}">Home</a></li>
+                    <li>NIMR-MUHIMBILI</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- banner-section end -->
 
-</body>
-</html>
+    <!-- faq-section -->
+    <section class="faq-section sec-pad">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+                    <div class="content_block_8">
+                        <div class="content-box">
+                            <div class="sec-title">
+                                <h6><i class="flaticon-star"></i><span>NIMR-MUHIMBILI</span></h6>
+                                <h2>ABOUT NIMR-MUHIMBILI</h2>
+                                <div class="title-shape"></div>
+                            </div>
+                            <div class="text">
+                                <h2>QUALIFICATIONS AND PAST PERFORMANCE OF THE NATIONAL INSTITUTE FOR MEDICAL RESEARCH MUHIMBILI CENTRE (NIMR-MUHIMBILI): </h2>
+                                <p>
+                                    <strong>NIMR Muhimbili: </strong>
+                                    The National Institute for Medical Research (NIMR) is a government parastatal institution established by the Act of Parliament in (NIMR Act  Cap 59 R.E.2002). It is the only public health research institute in the country. The institute has 8 centers across Tanzania; NIMR Muhimbili (NIMR- Muhimbili) is one of the centers. The institute’s mandate among others includes: to conduct, regulate and promote the practical application of research findings for the purpose of improving or advancing the health and general welfare of the people in Tanzania and around the world. As such, NIMR is poised to affect policy through its recommendations stemming from evidence-based health research. For many years, NIMR-Muhimbili have been collaborating with all disease control programs of the Ministry of Health such as Reproductive and Child Health (RCH) section, HIV/AIDS Control Programme (NACP), National Tuberculosis control programs etc in conducting implementation, operational and clinical research in Tanzania. The institute has a functional ethics committee, which is crucial for reviewing and monitoring of all health research in the country. The NIMR Muhimbili Centre has a well-trained workforce with extensive experience in conducting multi-site projects, some of which are multcountry, using both quantitative and qualitative research data collection methods. NIMR-Muhimbili has also a vast experience in conducting large scale trials and implementation research as summarized below. The investigators in this application has won, implemented and are able to manage large teams in different geographic areas as shown in several multi-site multi country studies they have conducted. Some of these studies have contributed to national and global policies in the management, prevention and control of diseases as indicated below. The group that has over 200 published papers in peer review journals, some with very high impact factors, such as the Lancet and the New England journal of medicine, is also leading the development, and now leading running of multi-centre HIV and TB trial web database, the management system, (the REDAMS database) in East Africa. The group has also won and successful implemented several consultancies with national and international agencies as shown in our CV’s. Apart from the Government of Tanzania, and other international donors, we also have experience in working with NIH, USAID and PEPFAR programs, and we have a quality web based data base for large scale multisite and multcountry clinical and population based studies. Currently, NIMR-Muhimbili, has active funding from the EDCTP, World Bank, UNICEF, USAID (through Engender Health organization), and the National Institute of Health among others. Being located inside the Muhimbili University of Health and Allied Sciences (MUHAS) and Muhimbili National hospital, NIMR-Muhimbili centre has a pool of qualified research assistants with different disciplines including medical doctors, social scientist, psychologists among the few. NIMR-Muhimbili has been conducting about 40-45 projects annually at different level of magnitude and disciplines. Below we are narrating just a few projects especially on maternal health.
+                                </p>
+                                <h2>CONTRIBUTION OF NIMR-MUHIMBILI TO REGIONAL/COUNTRY AND GLOBAL POLICY CHANGES</h2>
+                                <p>
+                                    <strong>1. The WHO Guidelines for managing advanced HIV disease and rapid initiation of antiretroviral therapy:</strong> Under the leadership of NIMR-Muhimbili, the centre implemented the trial entitled “Reduction of early mortality among HIV infected subjects starting antiretroviral therapy: a randomized trial” (The REMSTART trial/IP.2009.33011.003) was completed successful, published in the LANCET which shows a preventive package for Cryptococcal Meningitis that reduced mortality by 30%. REMSTART was among two trials selected through systematic review and contributed to the development of the WHO Guidelines for managing advanced HIV disease and rapid initiation of antiretroviral therapy (http://www.who.int/hiv/pub/guidelines/advanced-HIV-disease/en/), launched at launched at the 9th International AIDS Society (IAS) 2017
+                                </p>
+                                <p>
+                                    <strong>2. The Tanzania National Guidelines for the Management Of HIV and AIDS, Sixth 8 Edition, October 2017: </strong>
+                                    As the leading centre of the REMSTART and the project on Translating Research (REMSTART package) into Practice (TRIP- EDCTP-CSA-2014) both funded by EDCTP, the centre influenced the change and revision of the guidelines for management of HIV and AIDS (www.nacp.go.tz/site/download/NATIONAL_DECEMBER_2017.pdf ), which includes screening for Cryptococci (pg 98) infection and pre-emptive treatment with fluconazole for asymptomatic HIV infected individuals with Cryptococci Infection.
+                                </p>
+                                <p>
+                                    <strong>3. The WHO Guidelines for the Diagnosis, Prevention and Management of Cryptococci Disease in HIV-Infected Adults, Adolescents and Children, March 2018: </strong>
+                                    As Country leading centre in a multi countries trial and through the international team NIMR Muhimbili published results of a trial for Advancing Cryptococci Treatment for Africa (ACTA; ISRCTN45035509) in the New England Journal of Medicine which shows relatively simple changes can save tens of thousands of lives a year. In the light of the new findings, the World Health Organisation (WHO) has issued new Cryptococci Disease guidelines (http://www.who.int/hiv/mediacentre/news/cryptococcaldisease- infographic/en/) recommending a one-week drug course basing on ACTAL trial findings.
+                                </p>
+                                <p>
+                                    <strong>4. National Policy Guidelines for Collaborative TB/HIV Activities, 2016: </strong>
+                                    We conducted several studies focusing at epidemiological and clinical issues related to TB and HIV infection (publication list) and also involved in capacity building for clinical research in TB (http://eaccr.org/). The results of these projects have contributed to a better understanding of interaction between HIV and TB in the country. The knowledge justifies the use of Anti- Retroviral Treatment in TB patients and contributed to the Collaborative TB/HIV Activities (http://www.ntlp.go.tz/resources/) of NTLP and National AIDS/HIV Program (NACP).
+                                </p>
+                                <p>
+                                    <strong>5. Guidelines for Management of Multi Drug Resistant – TB in Tanzania; Second Edition, 2017: </strong>
+                                    Through NIMR-Muhimbili, the group conducted TB drug resistance research and routine TB drug resistance surveillance team at the Central Tuberculosis Reference Laboratory (CTRL), and published several publications on TB drug resistance. The results of TB drug susceptibility testing has provided the knowledge that is useful to the monitoring of TB treatment and hence demonstrating the NTLP progress, and contributed to the national policy on TB dug resistance (http://www.ntlp.go.tz/resources/).
+                                </p>
+                                <p>
+                                    <strong>6.Manual for the Management of Tuberculosis and Leprosy, Sixth Edition, 2013: </strong>
+                                    Studies on validity of the Spot-Morning-Spot sputum specimen in the detection of AFB in TB patients and effects of delayed processing of sputum specimen on laboratory results (our publication list) had impact on initiation of the policy on spot-morning- spot collection of sputum specimens. The policy reduces diagnosis time from three to two days. In addition, the studies showed that increased transit time reduces viability of M. tuberculosis. This has strengthened the emphasis on securing effective transport of sputum to zonal and reference laboratories the country. These results contributed to the policy revision for specimen collection for diagnosis of TB in NTLP manual (http://www.ntlp.go.tz/resources/).
+                                </p>
+                                <p>
+                                    <strong>7. Establishment of national one health unit/policy under Prime Minister Office: </strong>
+                                    Through our research group, we have played a leading role in conducting research and coordinating networks (http://afriqueoneaspire.org/) on zoonotic diseases like bovine TB, and brucellosis (my publication list) in humans in collaboration with other sectors, and contributed the demonstration of add value of one health. The country has now established a special unit for coordinating one health issue under the office of prime minister (http://preparednessandresponse.org/countries/tanzania/).
+                                </p>
+                                <p>
+                                    <strong>Existing infrastructure: </strong>
+                                    NIMR-Muhimbili has a strong capacity and experience for conducting health system research on HIV/AIDS, maternal and child health and has a strong data processing unit. The Centre has over 33 scientists trained in different disciplines mostly in Medicine and Anthropology at masters and PhD levels.
+                                </p>
+                                <p>
+                                    <strong>Research Logistics: </strong>
+                                    The NIMR- Muhimbili has vast experience to handle large research projects with owned pool of vehicles and with its SOP for field work activities clearly developed and always successfully used accordingly. The centre has own qualified personnel within a well strengthened department of finance and administration. We have 3 accounts in different currencies (Euro, USD, Tshs) with quick disbursement and clear procedures according to budget in research protocol. Furthermore, different projects work with separate accounts to shorten the procedures for the requested funds and the NIMR- Muhimbili is quarterly and annually audited.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- activities-section end -->
+{% endblock content %}

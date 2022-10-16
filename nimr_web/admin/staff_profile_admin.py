@@ -15,6 +15,7 @@ class StaffProfileAdmin(BaseSimpleHistoryAdmin):
             {
                 "fields": (
                     "staff_name",
+                    "staff_designation",
                     "staff_metrics",
                     "staff_photo",
                     "staff_bio",

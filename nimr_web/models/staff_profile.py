@@ -8,6 +8,10 @@ class StaffProfile(BaseUuidModel):
         verbose_name='Report Name',
         max_length=130,
     )
+    staff_designation = models.CharField(
+        verbose_name='Designation',
+        max_length=120,
+    )
     staff_metrics = models.IntegerField(
         verbose_name='Metrics',
     )
