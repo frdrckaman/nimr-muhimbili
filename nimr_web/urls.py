@@ -3,7 +3,7 @@ from django.urls import path
 from django.contrib import admin
 from .views import (
     AboutView, ContactView, HomeView, ProfileView, DPFinanceView, DPHritdView,
-    DPLabView, DPResearchView, DPPmuView, DPMonitoringView, TeamView)
+    DPLabView, DPResearchView, DPPmuView, DPMonitoringView, TeamView, PublicationView)
 
 admin.site.site_header = settings.NIMR_MUHIMBILI
 
@@ -20,5 +20,6 @@ urlpatterns = [
     path('department/monitoring', DPMonitoringView.as_view(), name='monitoring'),
     path('department/pmu', DPPmuView.as_view(), name='pmu'),
     path('department/research', DPResearchView.as_view(), name='research'),
+    path('publications/', PublicationView.as_view(), name='publications'),
     path('', HomeView.as_view(), name='home'),
 ]

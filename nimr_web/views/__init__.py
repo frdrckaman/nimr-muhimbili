@@ -9,3 +9,4 @@ from .dp_research_view import DPResearchView
 from .dp_pmu_view import DPPmuView
 from .dp_monitoring_view import DPMonitoringView
 from .dp_lab_view import DPLabView
+from .publications_view import PublicationView
