@@ -29,58 +29,16 @@
                                 <h2>Centre Publications</h2>
                                 <div class="title-shape"></div>
                             </div>
-                            <div class="text">
-                                <p>Activities Performed by finance department </p>
-                            </div>
                             <ul class="accordion-box">
-                                <li class="accordion block">
+                                {% for pulication in object_list %}
+                                    <li class="accordion block">
                                     <div class="acc-btn">
                                         <div class="icon-outer"></div>
-                                        <h5><span>01. </span> To advise the Centre Management on various financial matters</h5>
+                                        <h5><a href="{{ pulication.publication_link }}"><span>{{ forloop.counter }} </span>
+                                            {{ pulication.publication_title }}</a> </h5>
                                     </div>
                                 </li>
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="icon-outer"></div>
-                                        <h5><span>02. </span> The department facilitates day to day Centre operations by planning, controlling, and organizing all Centre financial and accounting operations. </h5>
-                                    </div>
-                                </li>
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="icon-outer"></div>
-                                        <h5><span>03. </span> Lead the Centre budgeting process and budget control.</h5>
-                                    </div>
-                                </li>
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="icon-outer"></div>
-                                        <h5><span>04. </span> Preparing general financial periodic and final reports.</h5>
-                                    </div>
-                                </li>
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="icon-outer"></div>
-                                        <h5><span>05. </span> Support other departments in short term activity planning, especially budget preparation and payments.</h5>
-                                    </div>
-                                </li>
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="icon-outer"></div>
-                                        <h5><span>06. </span> Responsible for maintenance of proper books of accounts and keeping of all records pertaining to income and expenditure as well as inventory of the Institute.</h5>
-                                    </div>
-                                </li>
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="icon-outer"></div>
-                                        <h5><span>07. </span> Ensure that adequate provisions exist for the safe custody of Institute’s money, securities and accountable documents.</h5>
-                                    </div>
-                                </li>
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="icon-outer"></div>
-                                        <h5><span>08. </span> Manage Centre’s Income and revenue sources and its day to day records</h5>
-                                    </div>
-                                </li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </div>

@@ -16,6 +16,7 @@ class PublicationAdmin(BaseSimpleHistoryAdmin):
                 "fields": (
                     "publication_datetime",
                     "publication_title",
+                    "publication_link",
                     "publication_file",
                 ),
             },
