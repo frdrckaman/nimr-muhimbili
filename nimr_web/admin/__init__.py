@@ -1,1 +1,2 @@
 from .staff_profile_admin import StaffProfileAdmin
+from .publications_admin import PublicationAdmin
