@@ -1,7 +1,11 @@
+from django.conf import settings
 from django.urls import path
+from django.contrib import admin
 from .views import (
     AboutView, ContactView, HomeView, ProfileView, DPFinanceView, DPHritdView,
     DPLabView, DPResearchView, DPPmuView, DPMonitoringView, TeamView)
+
+admin.site.site_header = settings.NIMR_MUHIMBILI
 
 app_name = "nimr_web"
 

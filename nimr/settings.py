@@ -128,6 +128,8 @@ NIMR_PUBLICATION_DIR = env.str("NIMR_PUBLICATION_DIR")
 
 NIMR_NEWS_DIR = env.str("NIMR_NEWS_DIR")
 
+NIMR_MUHIMBILI = env.str("NIMR_MUHIMBILI")
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
