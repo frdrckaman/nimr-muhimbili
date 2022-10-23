@@ -543,20 +543,15 @@
                                     <h3>Recent Publications</h3>
                                 </div>
                             </div>
-                            <div class="single-item">
-                                <div class="inner-box">
-                                    <figure class="icon-box"><img src="{% static 'assets/images/icons/icon-1.png' %}" alt=""></figure>
-                                    <h4>Publications 1</h4>
-                                    <p><a href="#">Click For More Details</a></p>
+                            {% for pulication in publications %}
+                                <div class="single-item">
+                                    <div class="inner-box">
+                                        <figure class="icon-box"><img src="{% static 'assets/images/icons/icon-1.png' %}" alt=""></figure>
+                                        <h4><a href="{{ pulication.publication_link }}">{{ pulication.publication_title }}</a> </h4>
+                                        <p><a href="{{ pulication.publication_file }}" download>Click For More Details</a></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="single-item">
-                                <div class="inner-box">
-                                    <figure class="icon-box"><img src="{% static 'assets/images/icons/icon-1.png' %}" alt=""></figure>
-                                    <h4>Publications 2</h4>
-                                    <p><a href="#">Click For More Details</a></p>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
@@ -681,26 +676,18 @@
                                         <div class="p-tabs-content">
                                             <div class="p-tab active-tab" id="tab-1">
                                                 <div class="two-column-carousel owl-carousel owl-theme owl-dots-none">
-                                                    <div class="schedule-block-one">
+                                                    {% for nw in news %}
+                                                        <div class="schedule-block-one">
                                                         <div class="inner-box">
                                                             <div class="lower-content">
                                                                 <ul class="post-info clearfix">
-                                                                    <li><i class="flaticon-newspaper"></i>Heaton Park, Mt Road M25 2SW</li>
+                                                                    <li><i class="flaticon-newspaper"></i>{{ nw.news_title }}</li>
                                                                 </ul>
-                                                                <div class="links"><a href="#">Read More<i class="flaticon-right-arrow"></i></a></div>
+                                                                <div class="links"><a href="{{ nw.news_file }}">Read More<i class="flaticon-right-arrow"></i></a></div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="schedule-block-one">
-                                                        <div class="inner-box">
-                                                            <div class="lower-content">
-                                                                <ul class="post-info clearfix">
-                                                                    <li><i class="flaticon-newspaper"></i>Heaton Park, Mt Road M25 2SW</li>
-                                                                </ul>
-                                                                <div class="links"><a href="#">Read More<i class="flaticon-right-arrow"></i></a></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    {% endfor %}
                                                 </div>
                                             </div>
                                         </div>

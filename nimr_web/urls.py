@@ -3,7 +3,8 @@ from django.urls import path
 from django.contrib import admin
 from .views import (
     AboutView, ContactView, HomeView, ProfileView, DPFinanceView, DPHritdView,
-    DPLabView, DPResearchView, DPPmuView, DPMonitoringView, TeamView, PublicationView)
+    DPLabView, DPResearchView, DPPmuView, DPMonitoringView, TeamView, PublicationView,
+    DownloadView)
 
 admin.site.site_header = settings.NIMR_MUHIMBILI
 
