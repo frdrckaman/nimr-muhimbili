@@ -259,7 +259,7 @@
                 <div class="auto-container">
                     <div class="top-inner clearfix">
                         <div class="left-column pull-left clearfix">
-                            <div class="weathre-box"><i class="flaticon-sunny-day-or-sun-weather"></i><a href="#">25th Jan: 32 0C / 65 0F</a></div>
+                            <div class="weathre-box"><i class="flaticon-sunny-day-or-sun-weather"></i><a href="#">{% now "jS F Y" %} </a></div>
                             <ul class="links-box clearfix">
                                 <li><a href="http://www.nimr.or.tz/">NIMR HQ</a></li>
                                 <li><a href="https://www.moh.go.tz/en/">MOH</a></li>
@@ -296,7 +296,7 @@
                             <nav class="main-menu navbar-expand-md navbar-light">
                                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                     <ul class="navigation clearfix">
-                                        <li class="current"><a href="{% url 'nimr_web:home' %}">Home</a></li>
+                                        <li><a href="{% url 'nimr_web:home' %}">Home</a></li>
                                         <li><a href="{% url 'nimr_web:about' %}">About Us</a></li>
                                         <li class="dropdown"><a href="#">Departments</a>
                                             <ul>
@@ -969,7 +969,7 @@
                 <div class="auto-container">
                     <div class="bottom-inner clearfix">
                         <div class="copyright pull-left">
-                            <p>&copy; 2022 By <a href="#">Muhimbili Medical Research Centre</a> All Rights Reserved. </p>
+                            <p>&copy; {% now "Y" %} By <a href="#">Muhimbili Medical Research Centre</a> All Rights Reserved. </p>
                         </div>
                         <ul class="footer-nav clearfix pull-right">
                             <li><a href="#">FAQ’s</a></li>
