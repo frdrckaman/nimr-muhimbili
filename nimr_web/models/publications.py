@@ -16,7 +16,18 @@ class Publication(BaseUuidModel):
         max_length=120,
     )
 
-    publication_file = models.FileField(upload_to=settings.NIMR_PUBLICATION_DIR)
+    publication_link = models.CharField(
+        verbose_name='Publications Link',
+        max_length=250,
+        null=True,
+        blank=True
+    )
+
+    publication_file = models.FileField(
+        upload_to=settings.NIMR_PUBLICATION_DIR,
+        null=True,
+        blank=True,
+    )
 
     history = HistoricalRecords()
 
