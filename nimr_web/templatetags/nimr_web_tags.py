@@ -18,7 +18,6 @@ def staff_profile_link(context, staff):
 @register.simple_tag(takes_context=True)
 def download_publication_file(context, path):
     file_path = os.path.join(settings.NIMR_PUBLICATION_DIR, str(path))
-    print(file_path)
     if os.path.exists(file_path):
         with open(file_path, 'rb') as fh:
             response = HttpResponse(fh.read(), content_type="application/pdf")
