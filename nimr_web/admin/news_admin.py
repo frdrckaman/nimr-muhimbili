@@ -16,6 +16,7 @@ class NewsAdmin(BaseSimpleHistoryAdmin):
                 "fields": (
                     "news_datetime",
                     "news_title",
+                    "news_file_url",
                     "news_file",
                 ),
             },

@@ -548,7 +548,7 @@
                                     <div class="inner-box">
                                         <figure class="icon-box"><img src="{% static 'assets/images/icons/icon-1.png' %}" alt=""></figure>
                                         <h4><a href="{{ pulication.publication_link }}">{{ pulication.publication_title }}</a> </h4>
-                                        <p><a href="{{ pulication.publication_file }}" download>Click For More Details</a></p>
+                                        <p><a href="{{ pulication.publication_link }}">Click For More Details</a></p>
                                     </div>
                                 </div>
                             {% endfor %}
@@ -659,7 +659,6 @@
                                 <div class="row clearfix">
                                     <div class="col-lg-4 col-md-12 col-sm-12 form-column">
                                         <div class="subscribe-inner centred">
-
                                             <div class="lower-box">
                                                 <form action="#" method="post" class="subscribe-form">
                                                     <div class="form-group">
@@ -675,18 +674,23 @@
                                     <div class="col-lg-8 col-md-12 col-sm-12 inner-column">
                                         <div class="p-tabs-content">
                                             <div class="p-tab active-tab" id="tab-1">
-                                                <div class="two-column-carousel owl-carousel owl-theme owl-dots-none">
+                                                <div class="two-column-carousel owl-carousel
+                                                owl-theme owl-dots-none">
                                                     {% for nw in news %}
                                                         <div class="schedule-block-one">
-                                                        <div class="inner-box">
-                                                            <div class="lower-content">
-                                                                <ul class="post-info clearfix">
-                                                                    <li><i class="flaticon-newspaper"></i>{{ nw.news_title }}</li>
-                                                                </ul>
-                                                                <div class="links"><a href="{{ nw.news_file }}">Read More<i class="flaticon-right-arrow"></i></a></div>
+                                                            <div class="inner-box">
+                                                                <div class="lower-content">
+                                                                    <ul class="post-info clearfix">
+                                                                        <li><a href="{{ nw.news_file_url }}"><i class="flaticon-newspaper"></i>{{ nw.news_title }}</a></li>
+                                                                    </ul>
+                                                                    <div class="links">
+                                                                        <a href="{{ nw.news_file_url }}">Read More
+                                                                            <i class="flaticon-right-arrow"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
                                                     {% endfor %}
                                                 </div>
                                             </div>

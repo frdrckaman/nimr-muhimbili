@@ -16,6 +16,13 @@ class News(BaseUuidModel):
         max_length=120,
     )
 
+    news_file_url = models.CharField(
+        verbose_name='File URL',
+        max_length=255,
+        blank=True,
+        null=True,
+    )
+
     news_file = models.FileField(upload_to=settings.NIMR_NEWS_DIR)
 
     history = HistoricalRecords()

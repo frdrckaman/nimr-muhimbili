@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.urls import path
 from django.contrib import admin
+from django.conf.urls.static import static
 from .views import (
     AboutView, ContactView, HomeView, ProfileView, DPFinanceView, DPHritdView,
     DPLabView, DPResearchView, DPPmuView, DPMonitoringView, TeamView, PublicationView,
@@ -22,5 +23,8 @@ urlpatterns = [
     path('department/pmu', DPPmuView.as_view(), name='pmu'),
     path('department/research', DPResearchView.as_view(), name='research'),
     path('publications/', PublicationView.as_view(), name='publications'),
+    # path('download/<str:file_name>', DownloadView.as_view(), name='download'),
     path('', HomeView.as_view(), name='home'),
 ]
+
+urlpatterns += static(settings.NEWS_URL, document_root=settings.NEWS_ROOT)
