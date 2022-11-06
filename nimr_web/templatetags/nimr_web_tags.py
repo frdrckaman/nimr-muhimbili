@@ -26,3 +26,19 @@ def download_publication_file(context, path):
             response['Content-Disposition'] = 'inline; filename=' + os.path.basename(file_path)
             return response
     raise Http404
+
+@register.inclusion_tag(
+    f"nimr_web/bootstrap/tags/pagination.html",
+    takes_context=True,
+)
+def pagination(context):
+    page_obj = context.get("page_obj")
+    num_pages = "a" * page_obj.paginator.num_pages if page_obj else 1
+    show_pagination = True if page_obj.paginator.num_pages > settings.NIMR_PAGINATION else False
+
+    return dict(
+        page_obj=page_obj,
+        pages=page_obj.paginator.num_pages,
+        num_pages=num_pages,
+        show_pagination=show_pagination,
+    )

@@ -1,0 +1,14 @@
+<div class="pagination-wrapper centred">
+    <ul class="pagination clearfix">
+        {% if page_obj.has_previous %}
+            <li><a href="{{ page_obj.previous_page_number }}"><i class="far fa-angle-double-left"></i></a></li>
+        {% endif %}
+        {% for num in num_pages %}
+            <li><a href="{{ forloop.counter }}" class="{% if forloop.counter == page_obj.number %}current{% endif %}">{{ forloop.counter }}</a></li>
+        {% endfor %}
+        {% if page_obj.has_next %}
+            <li><a href="{{ page_obj.next_page_number }}"><i class="far fa-angle-double-right"></i></a></li>
+        {% endif %}
+    </ul>
+</div>
+<br>

@@ -23,6 +23,7 @@ urlpatterns = [
     path('department/pmu', DPPmuView.as_view(), name='pmu'),
     path('department/research', DPResearchView.as_view(), name='research'),
     path('publications/', PublicationView.as_view(), name='publications'),
+    path('publications/<page>', PublicationView.as_view(), name='publications'),
     # path('download/<str:file_name>', DownloadView.as_view(), name='download'),
     path('', HomeView.as_view(), name='home'),
 ]

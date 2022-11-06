@@ -12,8 +12,7 @@ env = environ.Env(
     DEBUG_TOOLBAR=(bool, False),
     DATABASE_SQLITE_ENABLED=(bool, False),
     DJANGO_EMAIL_ENABLED=(bool, False),
-    FIN_START_RANGE=(int, 4),
-    FIN_END_RANGE=(int, 26),
+    NIMR_PAGINATION=(int, 10)
 )
 
 environ.Env.read_env(ENV_DIR)
@@ -129,6 +128,8 @@ NIMR_PUBLICATION_DIR = env.str("NIMR_PUBLICATION_DIR")
 NIMR_NEWS_DIR = env.str("NIMR_NEWS_DIR")
 
 NIMR_MUHIMBILI = env.str("NIMR_MUHIMBILI")
+
+NIMR_PAGINATION = env("NIMR_PAGINATION")
 
 
 # Static files (CSS, JavaScript, Images)

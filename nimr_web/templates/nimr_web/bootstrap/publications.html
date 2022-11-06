@@ -1,4 +1,5 @@
 {% extends 'nimr_web/bootstrap/base.html' %}
+{% load nimr_web_tags %}
 {% load static %}
 {% block content %}
         <!-- banner-section -->
@@ -46,5 +47,6 @@
             </div>
         </div>
     </section>
+    {% pagination %}
     <!-- activities-section end -->
 {% endblock %}
