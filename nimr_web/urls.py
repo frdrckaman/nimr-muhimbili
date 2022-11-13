@@ -4,8 +4,8 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from .views import (
     AboutView, ContactView, HomeView, ProfileView, DPFinanceView, DPHritdView,
-    DPLabView, DPResearchView, DPPmuView, DPMonitoringView, TeamView, PublicationView,
-    DownloadView)
+    DPLabView, DPResearchView, DPPmuView, DPMonitoringView, TeamView, PublicationView,)
+from .views.kilosa_view import KilosaView
 
 admin.site.site_header = settings.NIMR_MUHIMBILI
 
@@ -24,7 +24,7 @@ urlpatterns = [
     path('department/research', DPResearchView.as_view(), name='research'),
     path('publications/', PublicationView.as_view(), name='publications'),
     path('publications/<page>', PublicationView.as_view(), name='publications'),
-    # path('download/<str:file_name>', DownloadView.as_view(), name='download'),
+    path('kilosa/', KilosaView.as_view(), name='kilosa'),
     path('', HomeView.as_view(), name='home'),
 ]
 
