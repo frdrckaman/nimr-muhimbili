@@ -5,8 +5,6 @@ from django.conf import settings
 from django.http import HttpResponse, Http404
 from django.urls import reverse
 
-from nimr.settings import ENV_DIR
-
 profile_url = 'nimr_web:profile'
 
 register = template.Library()
