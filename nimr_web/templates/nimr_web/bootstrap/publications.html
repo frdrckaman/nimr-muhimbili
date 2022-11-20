@@ -35,7 +35,7 @@
                                     <li class="accordion block">
                                     <div class="acc-btn">
                                         <div class="icon-outer"></div>
-                                        <h5><a href="{{ pulication.publication_link }}"><span>{{ forloop.counter }} </span>
+                                        <h5><a href="{{ pulication.publication_link }}"><span>{{ page_obj.start_index|add:forloop.counter0 }} </span>
                                             {{ pulication.publication_title }}</a> </h5>
                                     </div>
                                 </li>
