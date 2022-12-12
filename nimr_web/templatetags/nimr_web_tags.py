@@ -25,6 +25,7 @@ def download_publication_file(context, path):
             return response
     raise Http404
 
+
 @register.inclusion_tag(
     f"nimr_web/bootstrap/tags/pagination.html",
     takes_context=True,
