@@ -27,6 +27,9 @@ class News(BaseUuidModel):
 
     history = HistoricalRecords()
 
+    def __str__(self):
+        return self.news_title
+
     class Meta(BaseUuidModel.Meta):
         verbose_name = "News"
         verbose_name_plural = "News"

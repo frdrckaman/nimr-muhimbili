@@ -31,6 +31,9 @@ class Publication(BaseUuidModel):
 
     history = HistoricalRecords()
 
+    def __str__(self):
+        return self.publication_title
+
     class Meta(BaseUuidModel.Meta):
         verbose_name = "Publications"
         verbose_name_plural = "Publications"

@@ -5,7 +5,7 @@ from ..mixin import BaseUuidModel
 
 class StaffProfile(BaseUuidModel):
     staff_name = models.CharField(
-        verbose_name='Report Name',
+        verbose_name='Staff Name',
         max_length=130,
     )
     staff_designation = models.CharField(
@@ -24,6 +24,9 @@ class StaffProfile(BaseUuidModel):
     )
 
     history = HistoricalRecords()
+
+    def __str__(self):
+        return self.staff_name
 
     class Meta(BaseUuidModel.Meta):
         verbose_name = "Staff Profile"

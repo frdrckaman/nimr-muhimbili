@@ -111,6 +111,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+if env("DJANGO_DEBUG"):
+    NIMR_PUBLICATION_DIR = env.str("NIMR_PUBLICATION_DIR_DEBUG")
+    NIMR_NEWS_DIR = env.str("NIMR_NEWS_DIR_DEBUG")
+    NIMR_IMG_DIR = env.str("NIMR_IMG_DIR_DEBUG")
+else:
+    NIMR_PUBLICATION_DIR = env.str("NIMR_PUBLICATION_DIR_LIVE")
+    NIMR_NEWS_DIR = env.str("NIMR_NEWS_DIR_LIVE")
+    NIMR_IMG_DIR = env.str("NIMR_IMG_DIR_LIVE")
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
@@ -123,9 +132,9 @@ USE_I18N = True
 
 USE_TZ = True
 
-NIMR_PUBLICATION_DIR = env.str("NIMR_PUBLICATION_DIR")
-
-NIMR_NEWS_DIR = env.str("NIMR_NEWS_DIR")
+# NIMR_PUBLICATION_DIR = env.str("NIMR_PUBLICATION_DIR")
+#
+# NIMR_NEWS_DIR = env.str("NIMR_NEWS_DIR")
 
 NIMR_MUHIMBILI = env.str("NIMR_MUHIMBILI")
 
