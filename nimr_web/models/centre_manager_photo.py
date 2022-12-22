@@ -14,7 +14,7 @@ class CentreManagerPhoto(BaseUuidModel):
         max_length=120,
     )
     manager_photo = models.FileField(
-        upload_to=settings.NIMR_MANAGER_PHOTO,
+        upload_to=settings.NIMR_MANAGER_PHOTO_DIR,
         null=True,
         blank=True,
     )
