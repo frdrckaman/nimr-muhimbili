@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.db import models
 from simple_history.models import HistoricalRecords
 from ..mixin import BaseUuidModel
@@ -15,9 +16,15 @@ class StaffProfile(BaseUuidModel):
     staff_metrics = models.IntegerField(
         verbose_name='Metrics',
     )
-    staff_photo = models.CharField(
-        verbose_name='Image path',
-        max_length=100,
+    staff_photo = models.FileField(
+        upload_to=settings.NIMR_CDN_STAFF_PHOTO,
+    )
+    staff_photo_link = models.CharField(
+        verbose_name='Image Link',
+        max_length=200,
+        blank=True,
+        null=True,
+        help_text="Use this if image is located on a different server"
     )
     staff_bio = models.TextField(
         verbose_name='Bio',

@@ -84,6 +84,7 @@ instance/
 docs/_build/
 
 uploads/
+nimr_web/static/assets/images/team/
 
 # PyBuilder
 .pybuilder/

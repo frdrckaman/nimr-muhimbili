@@ -28,8 +28,9 @@ class SliderPhoto(BaseUuidModel):
         blank=True,
         help_text="Use this if image is located on a different server"
     )
-    slider_metric = models.IntegerField(
-        verbose_name="Ordering metric"
+    slider_metrics = models.IntegerField(
+        verbose_name="Ordering metrics",
+        default=0,
     )
 
     history = HistoricalRecords()

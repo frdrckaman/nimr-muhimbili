@@ -19,7 +19,7 @@ class SliderPhotoAdmin(BaseSimpleHistoryAdmin):
                     "slider_description",
                     "slider_photo",
                     "slider_photo_link",
-                    "slider_metric",
+                    "slider_metrics",
                 ),
             },
         ),

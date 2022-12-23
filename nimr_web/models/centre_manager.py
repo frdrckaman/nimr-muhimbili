@@ -15,14 +15,15 @@ class CentreManagerPhoto(BaseUuidModel):
     )
     manager_photo = models.FileField(
         upload_to=settings.NIMR_MANAGER_PHOTO_DIR,
-        null=True,
-        blank=True,
+        default=None,
     )
     manager_photo_link = models.CharField(
         verbose_name='Link to an Image',
         max_length=100,
         null=True,
         blank=True,
+        default=None,
+        help_text="Use this if image is located on a different server"
     )
 
     history = HistoricalRecords()
