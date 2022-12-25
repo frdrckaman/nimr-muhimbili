@@ -146,6 +146,8 @@ NIMR_MUHIMBILI = env.str("NIMR_MUHIMBILI")
 
 NIMR_PAGINATION = env("NIMR_PAGINATION")
 
+NIMR_CDN_DOMAIN = env.str("NIMR_CDN_DOMAIN")
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/

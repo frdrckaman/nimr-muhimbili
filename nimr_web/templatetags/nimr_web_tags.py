@@ -41,3 +41,17 @@ def pagination(context):
         num_pages=num_pages,
         show_pagination=show_pagination,
     )
+
+@register.inclusion_tag(
+    f"nimr_web/bootstrap/tags/staff_photo.html",
+    takes_context=True,
+)
+def staff_photo(context, img):
+    photo = str(img).split('/')
+    image = img if settings.DEBUG else f"{settings.NIMR_CDN_DOMAIN}" \
+                                       f"{settings.NIMR_CDN_STAFF_PHOTO}{photo[-1]}"
+    print(image)
+    return dict(
+        image=image,
+        debug=settings.DEBUG
+    )
