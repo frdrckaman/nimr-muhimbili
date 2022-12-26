@@ -1,0 +1,19 @@
+{% load static %}
+
+<div class="col-lg-6 col-md-12 col-sm-12 image-column">
+    <div class="image_block_1">
+        <div class="image-box">
+            <figure class="image">
+                {% if debug %}
+                    <img src="{% static image %}" alt="Centre Manager Photo">
+                {% else %}
+                    <img src="{{ image }}" alt="Centre Manager Photo">
+                {% endif %}
+            </figure>
+            <div class="text">
+                <h4>{{ name }}</h4>
+                <h4>{{ title }}</h4>
+            </div>
+        </div>
+    </div>
+</div>

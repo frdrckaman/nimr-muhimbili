@@ -1,4 +1,5 @@
 {% load static %}
+{% load nimr_web_tags %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -533,17 +534,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                            <div class="image_block_1">
-                                <div class="image-box">
-                                    <figure class="image"><img src="{% static 'assets/images/resource/manager.jpg' %}" alt=""></figure>
-                                    <div class="text">
-                                        <h4>Dr. Mary Mayige</h4>
-                                        <h4>NIMR-MUHIMBILI CENTRE MANAGER</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {% centre_manager %}
                     </div>
                 </div>
             </section>

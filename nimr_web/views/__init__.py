@@ -1,6 +1,6 @@
 from .about_view import AboutView
 from .contact_view import ContactView
-from .home_view import HomeView
+from .home_view import View
 from .profile_view import ProfileView
 from .team_view import TeamView
 from .dp_finance_view import DPFinanceView

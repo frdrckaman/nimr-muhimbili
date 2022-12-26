@@ -1,18 +1,10 @@
-from django.views.generic import TemplateView
-from nimr_web.models import News, Publication
+from .view_mixin import ViewMixin
 
 
-class HomeView(TemplateView):
+class View(ViewMixin):
     template_name = f"nimr_web/bootstrap/base.html"
 
     def get_context_data(self, **kwargs):
-        publications = Publication.objects.all()[:2]
-        news = News.objects.all()[:16]
-        print(news)
         context = super().get_context_data(**kwargs)
-        context.update(
-            publications=publications,
-            news=news,
-        )
         return context
 

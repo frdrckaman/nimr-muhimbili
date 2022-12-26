@@ -17,7 +17,7 @@ class SliderPhoto(BaseUuidModel):
         verbose_name='Short description',
     )
     slider_photo = models.FileField(
-        upload_to=settings.NIMR_MANAGER_PHOTO_DIR,
+        upload_to=settings.NIMR_CDN_SLIDER_PHOTO,
         null=True,
         blank=True,
     )

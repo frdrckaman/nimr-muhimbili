@@ -101,7 +101,7 @@ class Migration(migrations.Migration):
                     "manager_designation",
                     models.CharField(max_length=120, verbose_name="Designation"),
                 ),
-                ("manager_photo", models.CharField(max_length=100, verbose_name="Image")),
+                ("centre_manager", models.CharField(max_length=100, verbose_name="Image")),
             ],
             options={
                 "verbose_name": "Centre Manager Photo",
@@ -192,7 +192,7 @@ class Migration(migrations.Migration):
                     "manager_designation",
                     models.CharField(max_length=120, verbose_name="Designation"),
                 ),
-                ("manager_photo", models.CharField(max_length=100, verbose_name="Image")),
+                ("centre_manager", models.CharField(max_length=100, verbose_name="Image")),
                 ("history_id", models.AutoField(primary_key=True, serialize=False)),
                 ("history_date", models.DateTimeField(db_index=True)),
                 ("history_change_reason", models.CharField(max_length=100, null=True)),

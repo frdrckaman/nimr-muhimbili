@@ -14,8 +14,10 @@ class CentreManagerPhoto(BaseUuidModel):
         max_length=120,
     )
     manager_photo = models.FileField(
-        upload_to=settings.NIMR_MANAGER_PHOTO_DIR,
+        upload_to=settings.NIMR_MANAGER_PHOTO,
         default=None,
+        blank=True,
+        null=True
     )
     manager_photo_link = models.CharField(
         verbose_name='Link to an Image',

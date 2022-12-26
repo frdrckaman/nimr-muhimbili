@@ -3,7 +3,7 @@ from django.urls import path
 from django.contrib import admin
 from django.conf.urls.static import static
 from .views import (
-    AboutView, ContactView, HomeView, ProfileView, DPFinanceView, DPHritdView,
+    AboutView, ContactView, View, ProfileView, DPFinanceView, DPHritdView,
     DPLabView, DPResearchView, DPPmuView, DPMonitoringView, TeamView, PublicationView,)
 from .views.kilosa_view import KilosaView
 
@@ -25,7 +25,7 @@ urlpatterns = [
     path('publications/', PublicationView.as_view(), name='publications'),
     path('publications/<page>', PublicationView.as_view(), name='publications'),
     path('kilosa/', KilosaView.as_view(), name='kilosa'),
-    path('', HomeView.as_view(), name='home'),
+    path('', View.as_view(), name='home'),
 ]
 
 urlpatterns += static(settings.NEWS_URL, document_root=settings.NEWS_ROOT)

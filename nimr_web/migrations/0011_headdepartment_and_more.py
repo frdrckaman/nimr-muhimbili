@@ -165,7 +165,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AlterField(
             model_name="centremanagerphoto",
-            name="manager_photo",
+            name="centre_manager",
             field=models.FileField(
                 default=None, upload_to="nimr_web/static/assets/images/resource"
             ),
@@ -184,7 +184,7 @@ class Migration(migrations.Migration):
         ),
         migrations.AlterField(
             model_name="historicalcentremanagerphoto",
-            name="manager_photo",
+            name="centre_manager",
             field=models.TextField(default=None, max_length=100),
         ),
         migrations.AlterField(

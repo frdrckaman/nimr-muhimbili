@@ -26,14 +26,14 @@ class Migration(migrations.Migration):
         ),
         migrations.AlterField(
             model_name="centremanagerphoto",
-            name="manager_photo",
+            name="centre_manager",
             field=models.FileField(
                 blank=True, null=True, upload_to="nimr_web/static/assets/images/resource"
             ),
         ),
         migrations.AlterField(
             model_name="historicalcentremanagerphoto",
-            name="manager_photo",
+            name="centre_manager",
             field=models.TextField(blank=True, max_length=100, null=True),
         ),
     ]
