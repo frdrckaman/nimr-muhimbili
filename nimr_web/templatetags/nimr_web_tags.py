@@ -73,3 +73,16 @@ def centre_manager(context, image=None, name=None, title=None):
         title=title,
         debug=settings.DEBUG
     )
+
+@register.inclusion_tag(
+    f"nimr_web/bootstrap/tags/slider_photo.html",
+    takes_context=True,
+)
+def slider(context):
+    print(context.get("sliders"))
+    for slider in context.get("sliders"):
+        print(slider)
+
+    return dict(
+        debug=settings.DEBUG
+    )

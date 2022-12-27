@@ -30,6 +30,7 @@ class SliderPhotoAdmin(BaseSimpleHistoryAdmin):
         "slider_subtitle",
         "slider_title",
         "slider_description",
+        "slider_photo",
     )
 
     search_fields = (
