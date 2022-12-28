@@ -15,6 +15,8 @@ class SliderPhoto(BaseUuidModel):
     )
     slider_description = models.TextField(
         verbose_name='Short description',
+        blank=True,
+        null=True,
     )
     slider_photo = models.FileField(
         upload_to=settings.NIMR_CDN_SLIDER_PHOTO,

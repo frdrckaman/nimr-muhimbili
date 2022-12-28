@@ -19,6 +19,7 @@ class CentreManagerPhoto(BaseUuidModel):
         blank=True,
         null=True
     )
+
     manager_photo_link = models.CharField(
         verbose_name='Link to an Image',
         max_length=100,
