@@ -79,10 +79,8 @@ def centre_manager(context, image=None, name=None, title=None):
     takes_context=True,
 )
 def slider(context):
-    print(context.get("sliders"))
-    for slider in context.get("sliders"):
-        print(slider)
-
     return dict(
-        debug=settings.DEBUG
+        sliders=context.get("sliders"),
+        debug=settings.DEBUG,
+        loop=8
     )

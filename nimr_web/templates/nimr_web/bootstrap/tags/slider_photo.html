@@ -1,0 +1,26 @@
+{% load static %}
+{% for slider in sliders %}
+    <div class="slide-item">
+    {% if debug %}
+        <div class="image-layer" style="background-image:url({% static slider.image %})"></div>
+    {% else %}
+        <div class="image-layer" style="background-image:url({{ slider.image }})"></div>
+    {% endif %}
+        <div class="auto-container">
+            <div class="content-box">
+                <h6><i class="flaticon-star"></i>{{ slider.slider_subtitle }}</h6>
+                <h1>{{ slider.slider_title }}</h1>
+                {% if slider.slider_description %}
+                    <p>{{ slider.slider_description }}</p>
+                {% else %}
+                    <p1>&nbsp;&nbsp;</p1>
+                    <p>&nbsp;&nbsp;</p>
+                    <p1>&nbsp;&nbsp;</p1>
+                {% endif %}
+                <div class="btn-box">
+                    <a href="#" class="theme-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
