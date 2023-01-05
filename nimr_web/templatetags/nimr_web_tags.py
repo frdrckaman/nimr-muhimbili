@@ -84,3 +84,14 @@ def slider(context):
         debug=settings.DEBUG,
         loop=8
     )
+
+@register.inclusion_tag(
+    f"nimr_web/bootstrap/tags/department.html",
+    takes_context=True,
+)
+def department(context):
+    return dict(
+        sliders=context.get("sliders"),
+        debug=settings.DEBUG,
+        loop=8
+    )

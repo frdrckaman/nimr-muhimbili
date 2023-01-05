@@ -16,7 +16,7 @@ class HeadDepartmentAdmin(BaseSimpleHistoryAdmin):
                 "fields": (
                     "head_name",
                     "head_department",
-
+                    "head_metrics"
                 ),
             },
         ),
