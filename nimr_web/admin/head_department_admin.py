@@ -16,9 +16,7 @@ class HeadDepartmentAdmin(BaseSimpleHistoryAdmin):
                 "fields": (
                     "head_name",
                     "head_department",
-                    "head_metrics",
-                    "head_photo",
-                    "head_photo_link",
+
                 ),
             },
         ),
@@ -28,7 +26,6 @@ class HeadDepartmentAdmin(BaseSimpleHistoryAdmin):
     list_display = (
         "head_name",
         "head_department",
-        "head_photo",
     )
 
     search_fields = (

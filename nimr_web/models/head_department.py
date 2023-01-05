@@ -5,9 +5,8 @@ from ..mixin import BaseUuidModel
 
 
 class HeadDepartment(BaseUuidModel):
-    head_name = models.CharField(
-        verbose_name='Head Name',
-        max_length=160,
+    head_name = models.ForeignKey(
+        'StaffProfile', on_delete=models.CASCADE
     )
     head_department = models.CharField(
         verbose_name='Department Name',
@@ -15,16 +14,6 @@ class HeadDepartment(BaseUuidModel):
     )
     head_metrics = models.IntegerField(
         verbose_name='Metrics',
-    )
-    head_photo = models.FileField(
-        upload_to=settings.NIMR_CDN_STAFF_PHOTO,
-    )
-    head_photo_link = models.CharField(
-        verbose_name='Image path',
-        max_length=200,
-        blank=True,
-        null=True,
-        help_text="Use this if image is located on a different server"
     )
 
     history = HistoricalRecords()
