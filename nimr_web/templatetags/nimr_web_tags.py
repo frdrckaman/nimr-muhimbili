@@ -48,9 +48,10 @@ def pagination(context):
     takes_context=True,
 )
 def staff_photo(context, img):
-    photo = str(img).split('/')
-    image = img if settings.DEBUG else f"{settings.NIMR_CDN_DOMAIN}" \
-                                       f"{settings.NIMR_CDN_STAFF_PHOTO}{photo[-1]}"
+    photo = str(img).split('static/')
+    photo1 = photo[1] if len(photo) > 1 else photo[0]
+    image = photo1 if settings.DEBUG else f"{settings.NIMR_CDN_DOMAIN}" \
+                                          f"{settings.NIMR_CDN_STAFF_PHOTO}{photo1[-1]}"
     return dict(
         image=image,
         debug=settings.DEBUG
@@ -63,7 +64,8 @@ def staff_photo(context, img):
 )
 def centre_manager(context, image=None, name=None, title=None):
     for manager in context.get("object_list")[:1]:
-        image = manager['image']
+        photo = str(manager['image']).split('static/')
+        image = photo[1] if len(photo) > 1 else photo[0]
         name = manager['manager_name']
         title = manager['manager_designation']
 
@@ -73,6 +75,7 @@ def centre_manager(context, image=None, name=None, title=None):
         title=title,
         debug=settings.DEBUG
     )
+
 
 @register.inclusion_tag(
     f"nimr_web/bootstrap/tags/slider_photo.html",
@@ -84,6 +87,7 @@ def slider(context):
         debug=settings.DEBUG,
         loop=8
     )
+
 
 @register.inclusion_tag(
     f"nimr_web/bootstrap/tags/department.html",

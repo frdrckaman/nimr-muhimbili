@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.views.generic import TemplateView
 
-from nimr_web.models import Publication, News, SliderPhoto
+from nimr_web.models import Publication, News, SliderPhoto, HeadDepartment, StaffProfile
 from nimr_web.models.centre_manager import CentreManagerPhoto
 
 
@@ -16,9 +16,11 @@ class ViewMixin(TemplateView):
         news = News.objects.all()[:16]
         queryset = CentreManagerPhoto.objects.all()
         sliders = SliderPhoto.objects.all().order_by('slider_metrics')
+        heads = HeadDepartment.objects.all().order_by('head_metrics')
         context.update(
             object_list=self.get_wrapped_queryset(queryset),
             publications=publications,
+            heads=self.get_wrapped_head(heads),
             sliders=self.get_wrapped_slider(sliders),
             news=news,
         )
@@ -45,6 +47,20 @@ class ViewMixin(TemplateView):
                 obj['image'] = obj['slider_photo']
             else:
                 obj['image'] = f"{settings.NIMR_CDN_DOMAIN}{settings.NIMR_CDN_SLIDER_PHOTO}{photo[-1]}"
+            wrapped_objs.append(obj)
+        return wrapped_objs
+
+    def get_wrapped_head(self, queryset):
+        wrapped_objs = []
+        for obj_qry in queryset:
+            obj = self.get_model_dict(obj_qry)
+            photo = StaffProfile.objects.get(id=obj['head_name_id'])
+            obj['head_name'] = str(photo.staff_name)
+            if settings.DEBUG:
+                obj['image'] = str(photo.staff_photo)
+            else:
+                obj['image'] = f"{settings.NIMR_CDN_DOMAIN}{settings.NIMR_CDN_STAFF_PHOTO}" \
+                               f"{str(photo.staff_photo).split('/')[-1]}"
             wrapped_objs.append(obj)
         return wrapped_objs
 
