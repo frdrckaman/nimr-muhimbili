@@ -517,8 +517,8 @@
                                 <div class="single-item">
                                     <div class="inner-box">
                                         <figure class="icon-box"><img src="{% static 'assets/images/icons/icon-1.png' %}" alt=""></figure>
-                                        <h4><a href="{{ pulication.publication_link }}">{{ pulication.publication_title }}</a> </h4>
-                                        <p><a href="{{ pulication.publication_link }}">Click For More Details</a></p>
+                                        <h4><a href="{{ pulication.publication_link }}" target="_blank">{{ pulication.publication_title }}</a> </h4>
+                                        <p><a href="{{ pulication.publication_link }}" target="_blank">Click For More Details</a></p>
                                     </div>
                                 </div>
                             {% endfor %}
@@ -654,7 +654,7 @@
                                                                         <li><a href="{{ nw.news_file_url }}"><i class="flaticon-newspaper"></i>{{ nw.news_title }}</a></li>
                                                                     </ul>
                                                                     <div class="links">
-                                                                        <a href="{{ nw.news_file_url }}">Read More
+                                                                        <a href="{{ nw.news_file_url }}" target="_blank">Read More
                                                                             <i class="flaticon-right-arrow"></i>
                                                                         </a>
                                                                     </div>
